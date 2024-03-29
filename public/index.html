@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="main-info">
+        <div id="resumen">
+            <h3>Proyecto Electro-Daca</h3>
+            <table id="electrodomesticos-tabla">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Tipo</th>
+                    <th>Precio</th>
+                    <th>Preciobase</th>
+                    <th>Inicial</th>
+                    <th>resta</th>
+                    <th>NroGiros</th>
+                    <th>MontoGiros</th>
+                </tr>
+            </table>
+            <h5>
+                La linea que proporciona más dinero es:
+                <span id="mayor-inicial">?</span>
+            </h5>
+        </div>
+
+        <button id="btn-agregar-lb">Agregar Linea Blanca</button>
+        <button id="btn-agregar-lm"> Agregar Linea Marron</button>
+    </section>
+    <section id="linea-blanca-form">
+        <h3>Datos de la Linea Blanca</h3>
+        <input type="text" id="codigo-lb" placeholder="Codigo"></input>
+
+        <input type="number" id="precio-lb" placeholder="Precio"></input>
+        <label>
+            <button id="btn-aceptar-lb">Aceptar</button>
+        </label>
+    </section>
+
+    <section id="linea-marron-form">
+        <h3> Datos de la Linea Marron</h3>
+        <input type="text" id="codigo-lm" placeholder="Codigo"></input>
+        <input type="number" id="precio-tipo-lm" placeholder="Tipo"></input>
+        <label>
+            <br>
+            <button id="btn-aceptar-lm">Aceptar</button>
+        </label>
+    </section>
+    <script type="module" src="./../index.js"></script>
+</body>
+</html>
